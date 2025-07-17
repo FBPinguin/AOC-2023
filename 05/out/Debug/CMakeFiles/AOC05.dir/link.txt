@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/AOC05.dir/link.d CMakeFiles/AOC05.dir/main.cpp.o -o AOC05

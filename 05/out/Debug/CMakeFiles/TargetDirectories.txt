@@ -1,0 +1,3 @@
+/home/floris/Documents/AdventOfCode/2023/05/out/Debug/CMakeFiles/AOC05.dir
+/home/floris/Documents/AdventOfCode/2023/05/out/Debug/CMakeFiles/edit_cache.dir
+/home/floris/Documents/AdventOfCode/2023/05/out/Debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/floris/Documents/AdventOfCode/2023/01/out/Debug",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -o CMakeFiles/AOC01.dir/main2.cpp.o -c /home/floris/Documents/AdventOfCode/2023/01/main2.cpp",
+  "file": "/home/floris/Documents/AdventOfCode/2023/01/main2.cpp",
+  "output": "CMakeFiles/AOC01.dir/main2.cpp.o"
+}
+]
