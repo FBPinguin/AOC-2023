@@ -3,6 +3,9 @@
 //
 
 
+#include <iostream>
+#include <queue>
+
 #include "Solution.h"
 
 int Solution::calculate_solution_2() {
@@ -14,7 +17,12 @@ int Solution::calculate_solution_2() {
     };
     int max_dist{0};
 
-    std::vector<state> work_list{begin_state};
+    // std::vector<state> work_list{begin_state};
+    auto cmp = [](const state& left, const state& right) {
+        return left.steps>right.steps;
+    };
+    std::priority_queue<state, std::vector<state>,decltype(cmp)> work_list;
+    work_list.emplace(begin_state);
     std::vector<Direction> directions = {
         {0, 1},
         {0, -1},
@@ -25,7 +33,9 @@ int Solution::calculate_solution_2() {
     std::unordered_map<Direction, int, DirectionHash> value_map;
 
     while (!work_list.empty()) {
-        state cur_state = *work_list.begin();
+        state cur_state = work_list.top();
+
+        work_list.pop();
         for (auto &dir: directions) {
 
 
@@ -70,14 +80,14 @@ int Solution::calculate_solution_2() {
                 continue;
             }
             else {
-                work_list.push_back(next_state);
+                work_list.emplace(next_state);
+                std::cout << next_state.steps << '\n';
             }
 
 
 
         }
 
-        work_list.erase(work_list.begin());
     }
 
 
